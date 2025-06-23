@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바른경영지원센터 - 정부지원금 컨설팅</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="바른경영지원센터는 중소기업과 소상공인을 위한 정부지원금 전문 컨설팅을 제공합니다. 정책자금, 운영자금, 창업자금 등 맞춤형 컨설팅으로 사업 성공을 도와드립니다.">
+    <meta name="keywords" content="정부지원금, 정책자금, 중소기업지원, 소상공인컨설팅, 창업자금, 운영자금, 바른경영지원센터">
+    <link rel="canonical" href="https://www.your-domain.com"> <!-- TODO: 실제 도메인으로 변경하세요 -->
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.your-domain.com"> <!-- TODO: 실제 도메인으로 변경하세요 -->
+    <meta property="og:title" content="바른경영지원센터 | 중소기업 정부지원금 컨설팅">
+    <meta property="og:description" content="복잡한 정부지원금, 전문가와 함께라면 쉽고 빠릅니다. 바른경영지원센터에서 맞춤형 무료 상담을 받아보세요.">
+    <meta property="og:image" content="https://i.ibb.co/nqGn9rT2/assets-task-01jyed4eb8etmv3vqqsc3p789m-1750682806-img-1.webp">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.your-domain.com"> <!-- TODO: 실제 도메인으로 변경하세요 -->
+    <meta property="twitter:title" content="바른경영지원센터 | 중소기업 정부지원금 컨설팅">
+    <meta property="twitter:description" content="복잡한 정부지원금, 전문가와 함께라면 쉽고 빠릅니다. 바른경영지원센터에서 맞춤형 무료 상담을 받아보세요.">
+    <meta property="twitter:image" content="https://i.ibb.co/nqGn9rT2/assets-task-01jyed4eb8etmv3vqqsc3p789m-1750682806-img-1.webp">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .floating-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .slide-in {
+            animation: slideIn 0.8s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .pulse-border {
+            animation: pulseBorder 2s infinite;
+        }
+        @keyframes pulseBorder {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4); }
+            50% { box-shadow: 0 0 0 10px rgba(59, 130, 246, 0); }
+        }
+        
+        /* 무한 스크롤 애니메이션 */
+        .infinite-scroll {
+            animation: infiniteScroll 30s linear infinite;
+        }
+        @keyframes infiniteScroll {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-50%); }
+        }
+        
+        .table-container {
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        /* 모달 스타일 */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            overflow-y: auto;
+        }
+        
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 0;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        .modal-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .modal-body {
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">바른경영지원센터</div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors">회사소개</a>
+                <a href="#services" class="text-gray-700 hover:text-blue-600 transition-colors">서비스</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors">상담신청</a>
+            </nav>
+            <button class="md:hidden bg-blue-600 text-white px-4 py-2 rounded">메뉴</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 slide-in">
+                사라지는 정책 자금과 정부지원금<br>
+                <span class="text-yellow-300">잡을 수 있습니다!</span>
+            </h1>
+            <div class="grid md:grid-cols-3 gap-8 my-12">
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 floating-animation">
+                    <div class="text-3xl font-bold text-yellow-300">3조 6천</div>
+                    <div class="text-lg">없어지는 정부 지원금 예산</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 floating-animation" style="animation-delay: 0.2s;">
+                    <div class="text-3xl font-bold text-yellow-300">8조 7천</div>
+                    <div class="text-lg">사라지는 정책 자금</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 floating-animation" style="animation-delay: 0.4s;">
+                    <div class="text-3xl font-bold text-yellow-300">300여개</div>
+                    <div class="text-lg">정부지원금 정책자금 종류</div>
+                </div>
+            </div>
+            <div class="text-xl mb-8">
+                <div class="bg-red-500 text-white px-4 py-2 rounded-full inline-block mb-4 pulse-border">
+                    ⚠️ 자금 조기 소진 유의!
+                </div>
+            </div>
+            <div class="text-2xl mb-8">
+                <strong>대표님의 시간을 아껴드립니다</strong><br>
+                따라만 오세요! 결과를 약속드리겠습니다!
+            </div>
+            <button id="mainConsultBtn" class="bg-yellow-400 text-black px-8 py-4 rounded-full text-xl font-bold hover:bg-yellow-300 transition-colors transform hover:scale-105">
+                🔍 무료 상담 신청하기
+            </button>
+            <div class="mt-6 text-lg">
+                <strong>아무것도 몰라도 상관없어요!</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-4">누적 상담진행건</div>
+                    <div class="text-6xl font-bold text-gray-800 mb-2">15,000+</div>
+                    <div class="text-gray-600">건의 성공적인 상담 경험</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-4">누적 집행 자금</div>
+                    <div class="text-6xl font-bold text-gray-800 mb-2">834억+</div>
+                    <div class="text-gray-600">원의 정부지원금 집행</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Customers -->
+    <section class="bg-gray-100 py-16" id="about">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">
+                이러한 대표님들께 추천드립니다!
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-red-500 text-2xl mb-4">📈</div>
+                    <h3 class="text-xl font-bold mb-2">높은 금리로 고민</h3>
+                    <p class="text-gray-600">7% 이상의 높은 금리를 사용하고 계신 대표님</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-blue-500 text-2xl mb-4">💰</div>
+                    <h3 class="text-xl font-bold mb-2">운영자금 필요</h3>
+                    <p class="text-gray-600">당장 운영자금이 필요하신 대표님</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-green-500 text-2xl mb-4">🏭</div>
+                    <h3 class="text-xl font-bold mb-2">설비투자 계획</h3>
+                    <p class="text-gray-600">기계, 설비 등 구매 자금이 필요한 대표님</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-purple-500 text-2xl mb-4">🏦</div>
+                    <h3 class="text-xl font-bold mb-2">대출 한계</h3>
+                    <p class="text-gray-600">은행권의 대출을 다 쓰신 대표님</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-orange-500 text-2xl mb-4">❌</div>
+                    <h3 class="text-xl font-bold mb-2">신청 거절 경험</h3>
+                    <p class="text-gray-600">정책자금 신청이 거절된 대표님</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-teal-500 text-2xl mb-4">📊</div>
+                    <h3 class="text-xl font-bold mb-2">사업 확장</h3>
+                    <p class="text-gray-600">매출확장, 하락 등으로 자금이 필요하신 대표님</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <div class="bg-yellow-100 border-l-4 border-yellow-500 p-6 rounded-lg inline-block">
+                    <div class="text-2xl font-bold text-gray-800 mb-2">신청자 10명 중, 5명은 대상자</div>
+                    <div class="text-lg text-gray-600">이 페이지를 보게 된다면 당신은 대상자가 되신겁니다</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Introduction -->
+    <section class="bg-blue-50 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold mb-8 text-gray-800">바른경영지원센터</h2>
+                <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+                    바른경영지원센터는 중소기업, 소상공인분들이<br>
+                    정부 정책자금을 최대한 활용할 수 있도록<br>
+                    지원하는 전문 경영 컨설팅 회사입니다
+                </p>
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">우리의 약속</h3>
+                    <p class="text-lg text-gray-700">
+                        저희 회사라 생각하고 최선을 다하겠습니다
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-time Status -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">실시간 상담 신청 현황</h2>
+            <div class="text-center mb-6">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                    <span class="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
+                    실시간 업데이트 중
+                </span>
+            </div>
+            <div class="overflow-x-auto">
+                <div class="table-container">
+                    <table class="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                        <thead class="bg-blue-600 text-white sticky top-0 z-10">
+                            <tr>
+                                <th class="px-6 py-3 text-left">이름</th>
+                                <th class="px-6 py-3 text-left">사업장</th>
+                                <th class="px-6 py-3 text-left">상품</th>
+                                <th class="px-6 py-3 text-left">신청현황</th>
+                            </tr>
+                        </thead>
+                        <tbody id="consultationTable" class="divide-y divide-gray-200 infinite-scroll">
+                            <!-- 데이터가 여기에 동적으로 추가됩니다 -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="gradient-bg py-16" id="contact">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-white">무료 상담 신청</h2>
+                <form class="bg-white rounded-lg p-8 shadow-lg" id="consultationForm">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-gray-700 text-sm font-bold mb-2">사업자명</label>
+                            <input type="text" id="businessName" name="businessName" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 text-sm font-bold mb-2">성함</label>
+                            <input type="text" id="representativeName" name="representativeName" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">문의하기</label>
+                        <div class="flex">
+                            <select id="phonePrefix" name="phonePrefix" class="px-3 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:border-blue-500">
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="016">016</option>
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                                <option value="019">019</option>
+                            </select>
+                            <span class="px-3 py-2 bg-gray-100 border-t border-b border-gray-300">-</span>
+                            <input type="text" id="phoneMiddle" name="phoneMiddle" maxlength="4" class="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:border-blue-500" required>
+                            <span class="px-3 py-2 bg-gray-100 border-t border-b border-gray-300">-</span>
+                            <input type="text" id="phoneLast" name="phoneLast" maxlength="4" class="w-full px-3 py-2 border border-gray-300 rounded-r-lg focus:outline-none focus:border-blue-500" required>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">사업자 지역 (사업자 등록증 주소지 기준)</label>
+                        <select id="businessLocation" name="businessLocation" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required>
+                            <option value="">시/도/군</option>
+                            <option value="서울특별시">서울특별시</option>
+                            <option value="부산광역시">부산광역시</option>
+                            <option value="대구광역시">대구광역시</option>
+                            <option value="인천광역시">인천광역시</option>
+                            <option value="광주광역시">광주광역시</option>
+                            <option value="대전광역시">대전광역시</option>
+                            <option value="울산광역시">울산광역시</option>
+                            <option value="세종특별자치시">세종특별자치시</option>
+                            <option value="경기도">경기도</option>
+                            <option value="강원도">강원도</option>
+                            <option value="충청북도">충청북도</option>
+                            <option value="충청남도">충청남도</option>
+                            <option value="전라북도">전라북도</option>
+                            <option value="전라남도">전라남도</option>
+                            <option value="경상북도">경상북도</option>
+                            <option value="경상남도">경상남도</option>
+                            <option value="제주특별자치도">제주특별자치도</option>
+                        </select>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">업력</label>
+                        <select id="businessYears" name="businessYears" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required>
+                            <option value="">업력 선택</option>
+                            <option value="1년 미만">1년 미만</option>
+                            <option value="1년~3년">1년~3년</option>
+                            <option value="3년~5년">3년~5년</option>
+                            <option value="5년~10년">5년~10년</option>
+                            <option value="10년 이상">10년 이상</option>
+                        </select>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">연매출</label>
+                        <select id="annualRevenue" name="annualRevenue" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required>
+                            <option value="">연매출 선택</option>
+                            <option value="1억 이하">1억 이하</option>
+                            <option value="1억~5억">1억~5억</option>
+                            <option value="5억~10억">5억~10억</option>
+                            <option value="10억 이상">10억 이상</option>
+                        </select>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">필요자금</label>
+                        <input type="text" id="requiredFunding" name="requiredFunding" placeholder="필요자금" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required>
+                    </div>
+                    <div class="mb-6">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2" id="privacyCheck" required>
+                            <span class="text-sm text-gray-700">개인정보처리방침 동의 <a href="#" class="text-blue-600 underline" id="privacyModal">[약관보기]</a></span>
+                        </label>
+                    </div>
+                    <button type="submit" id="submitBtn" class="w-full bg-blue-600 text-white py-3 rounded-lg text-lg font-bold hover:bg-blue-700 transition-colors transform hover:scale-105">
+                        문의하기
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">바른경영지원센터</h3>
+                    <p class="text-gray-300">중소기업, 소상공인을 위한 정부지원금 전문 컨설팅</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">서비스</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>정부지원금 컨설팅</li>
+                        <li>정책자금 신청</li>
+                        <li>운영자금 지원</li>
+                        <li>설비투자 자금</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">연락처</h4>
+                    <div class="text-gray-300 space-y-2">
+                        <div>📞 상담 문의: 상담폼</div>
+                        <div>📧 이메일: bar7845@consulting.co.kr</div>
+                        <div>🕒 운영시간: 평일 09:00-18:00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 바른경영지원센터. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fixed bottom-6 right-6">
+        <button class="bg-yellow-400 text-black p-4 rounded-full shadow-lg hover:bg-yellow-300 transition-colors pulse-border">
+            <span class="text-2xl">💬</span>
+        </button>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="fixed bottom-6 left-6">
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors">
+            <span class="text-xl">↑</span>
+        </button>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyPolicyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 class="text-2xl font-bold">개인정보처리방침</h2>
+                <p class="text-sm mt-2 opacity-90">바른경영지원센터 정부지원자금 상담 서비스</p>
+            </div>
+            <div class="modal-body">
+                <div class="space-y-6 text-gray-700">
+                    <section>
+                        <h3 class="text-lg font-bold text-blue-600 mb-3">1. 개인정보의 수집 및 이용목적</h3>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="mb-2"><strong>가. 정부지원자금 상담 서비스 제공</strong></p>
+                            <ul class="list-disc list-inside ml-4 space-y-1 text-sm">
+                                <li>정부지원금, 정책자금 상담 및 컨설팅</li>
+                                <li>맞춤형 지원사업 추천 및 안내</li>
+                                <li>신청서류 작성 지원 및 절차 안내</li>
+                                <li>사후관리 및 결과 안내</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3 class="text-lg font-bold text-blue-600 mb-3">2. 수집하는 개인정보의 항목</h3>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="mb-2"><strong>가. 필수정보</strong></p>
+                            <ul class="list-disc list-inside ml-4 space-y-1 text-sm">
+                                <li>사업자명, 대표자 성명</li>
+                                <li>연락처(휴대폰번호)</li>
+                                <li>사업자 소재지</li>
+                                <li>업력, 연매출</li>
+                                <li>필요자금 규모</li>
+                            </ul>
+                            <p class="mt-3 mb-2"><strong>나. 선택정보</strong></p>
+                            <ul class="list-disc list-inside ml-4 space-y-1 text-sm">
+                                <li>기타 상담에 필요한 사업 관련 정보</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3 class="text-lg font-bold text-blue-600 mb-3">3. 개인정보의 보유 및 이용기간</h3>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <ul class="list-disc list-inside space-y-1 text-sm">
+                                <li><strong>상담 서비스 제공기간:</strong> 상담 완료 후 1년</li>
+                                <li><strong>관련 법령에 따른 보존:</strong> 관계법령에서 정한 기간</li>
+                                <li><strong>동의철회 시:</strong> 즉시 파기 (단, 법령에 따른 보존 제외)</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3 class="text-lg font-bold text-blue-600 mb-3">4. 개인정보의 제3자 제공</h3>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="mb-2">회사는 원칙적으로 이용자의 개인정보를 외부에 제공하지 않습니다.</p>
+                            <p class="mb-2"><strong>다만, 아래의 경우에는 예외로 합니다:</strong></p>
+                            <ul class="list-disc list-inside ml-4 space-y-1 text-sm">
+                                <li>정부지원기관 신청 시 해당 기관으로의 정보 제공</li>
+                                <li>법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3 class="text-lg font-bold text-blue-600 mb-3">5. 개인정보 처리의 위탁</h3>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="text-sm">더 나은 서비스 제공을 위해 아래와 같이 개인정보 처리업무를 위탁하고 있습니다:</p>
+                            <div class="mt-3">
+                                <table class="w-full text-sm border border-gray-300">
+                                    <thead class="bg-gray-100">
+                                        <tr>
+                                            <th class="border border-gray-300 p-2">수탁업체</th>
+                                            <th class="border border-gray-300 p-2">위탁업무</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="border border-gray-300 p-2">카카오톡, 문자발송업체</td>
+                                            <td class="border border-gray-300 p-2">상담 안내 및 결과 전송</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3 class="text-lg font-bold text-blue-600 mb-3">6. 정보주체의 권리·의무 및 행사방법</h3>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="mb-2">이용자는 다음과 같은 권리를 행사할 수 있습니다:</p>
+                            <ul class="list-disc list-inside ml-4 space-y-1 text-sm">
+                                <li>개인정보 열람 요구</li>
+                                <li>오류 등이 있을 경우 정정·삭제 요구</li>
+                                <li>처리정지 요구</li>
+                                <li>동의철회/회원탈퇴</li>
+                            </ul>
+                            <p class="mt-3 text-sm"><strong>권리 행사 방법:</strong> 개인정보보호책임자에게 서면, 전화, 이메일 등을 통해 연락</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3 class="text-lg font-bold text-blue-600 mb-3">7. 개인정보의 안전성 확보조치</h3>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <ul class="list-disc list-inside space-y-1 text-sm">
+                                <li>개인정보 취급 직원의 최소화 및 교육</li>
+                                <li>정기적인 자체 감사 실시</li>
+                                <li>내부관리계획의 수립 및 시행</li>
+                                <li>개인정보의 암호화</li>
+                                <li>해킹 등에 대비한 기술적 대책</li>
+                                <li>개인정보에 대한 접근 제한</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3 class="text-lg font-bold text-blue-600 mb-3">8. 개인정보보호책임자</h3>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <p class="font-semibold mb-2">바른경영지원센터 개인정보보호책임자</p>
+                            <ul class="space-y-1 text-sm">
+                                <li><strong>이름:</strong> 개인정보보호책임자</li>
+                                <li><strong>전화:</strong> 신청폼/li>
+                                <li><strong>이메일:</strong> privacy@consulting.co.kr</li>
+                                <li><strong>처리시간:</strong> 평일 09:00~18:00</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3 class="text-lg font-bold text-blue-600 mb-3">9. 개인정보 처리방침 변경</h3>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="text-sm">이 개인정보 처리방침은 2025년 1월 1일부터 적용됩니다. 개인정보 처리방침이 변경되는 경우 변경사항을 홈페이지에 공지하겠습니다.</p>
+                        </div>
+                    </section>
+
+                    <div class="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
+                        <p class="text-sm font-semibold text-yellow-800 mb-2">⚠️ 중요 안내사항</p>
+                        <ul class="list-disc list-inside space-y-1 text-sm text-yellow-700">
+                            <li>본 약관에 동의하시면 정부지원자금 상담 서비스를 제공받으실 수 있습니다.</li>
+                            <li>개인정보 수집·이용에 동의하지 않으실 권리가 있으나, 동의를 거부하실 경우 서비스 이용이 제한됩니다.</li>
+                            <li>만 14세 미만은 법정대리인의 동의가 필요합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-8 flex justify-center space-x-4">
+                    <button id="agreeBtn" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">동의하고 닫기</button>
+                    <button id="disagreeBtn" class="bg-gray-400 text-white px-6 py-2 rounded-lg hover:bg-gray-500 transition-colors">동의안함</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slide-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Real-time consultation status updates
+        const consultationData = {
+            // 모든 데이터를 하나의 배열로 통합
+            allData: [
+                { name: '김해*', businessType: '개인사업자', product: '고용지원금', status: { text: '신청완료', class: 'bg-green-100 text-green-800' } },
+                { name: '박정*', businessType: '법인사업자', product: '운전시설자금', status: { text: '상담중', class: 'bg-yellow-100 text-yellow-800' } },
+                { name: '김유*', businessType: '개인사업자', product: '고용지원금', status: { text: '신청완료', class: 'bg-green-100 text-green-800' } },
+                { name: '김재*', businessType: '법인사업자', product: '운전시설자금', status: { text: '상담중', class: 'bg-yellow-100 text-yellow-800' } },
+                { name: '이정*', businessType: '법인사업자', product: '고용지원금', status: { text: '상담중', class: 'bg-yellow-100 text-yellow-800' } },
+                { name: '강하*', businessType: '개인사업자', product: '고용지원금', status: { text: '신청완료', class: 'bg-green-100 text-green-800' } },
+                { name: '장우*', businessType: '법인사업자', product: '운전시설자금', status: { text: '상담중', class: 'bg-yellow-100 text-yellow-800' } },
+                { name: '나정*', businessType: '개인사업자', product: '고용지원금', status: { text: '신청완료', class: 'bg-green-100 text-green-800' } },
+                { name: '박상*', businessType: '법인사업자', product: '운전시설자금', status: { text: '상담중', class: 'bg-yellow-100 text-yellow-800' } },
+                { name: '최진*', businessType: '법인사업자', product: '고용지원금', status: { text: '상담중', class: 'bg-yellow-100 text-yellow-800' } },
+                { name: '김민*', businessType: '개인사업자', product: '창업지원금', status: { text: '승인완료', class: 'bg-purple-100 text-purple-800' } },
+                { name: '이영*', businessType: '법인사업자', product: '기술개발자금', status: { text: '검토중', class: 'bg-blue-100 text-blue-800' } },
+                { name: '박철*', businessType: '개인사업자', product: '설비투자자금', status: { text: '신청완료', class: 'bg-green-100 text-green-800' } },
+                { name: '정소*', businessType: '법인사업자', product: '운영자금', status: { text: '상담중', class: 'bg-yellow-100 text-yellow-800' } },
+                { name: '한상*', businessType: '개인사업자', product: '수출지원금', status: { text: '승인완료', class: 'bg-purple-100 text-purple-800' } },
+                { name: '조미*', businessType: '법인사업자', product: '고용지원금', status: { text: '검토중', class: 'bg-blue-100 text-blue-800' } },
+                { name: '윤대*', businessType: '개인사업자', product: '운전시설자금', status: { text: '신청완료', class: 'bg-green-100 text-green-800' } },
+                { name: '임현*', businessType: '법인사업자', product: '창업지원금', status: { text: '상담중', class: 'bg-yellow-100 text-yellow-800' } },
+                { name: '장영*', businessType: '개인사업자', product: '기술개발자금', status: { text: '승인완료', class: 'bg-purple-100 text-purple-800' } },
+                { name: '오혜*', businessType: '법인사업자', product: '설비투자자금', status: { text: '검토중', class: 'bg-blue-100 text-blue-800' } },
+                { name: '신동*', businessType: '개인사업자', product: '운영자금', status: { text: '신청완료', class: 'bg-green-100 text-green-800' } },
+                { name: '김지*', businessType: '법인사업자', product: '수출지원금', status: { text: '상담중', class: 'bg-yellow-100 text-yellow-800' } },
+                { name: '이종*', businessType: '개인사업자', product: '고용지원금', status: { text: '승인완료', class: 'bg-purple-100 text-purple-800' } },
+                { name: '박미*', businessType: '법인사업자', product: '운전시설자금', status: { text: '검토중', class: 'bg-blue-100 text-blue-800' } },
+                { name: '최영*', businessType: '개인사업자', product: '창업지원금', status: { text: '신청완료', class: 'bg-green-100 text-green-800' } },
+                { name: '정현*', businessType: '법인사업자', product: '기술개발자금', status: { text: '상담중', class: 'bg-yellow-100 text-yellow-800' } },
+                { name: '강민*', businessType: '개인사업자', product: '설비투자자금', status: { text: '승인완료', class: 'bg-purple-100 text-purple-800' } },
+                { name: '송지*', businessType: '법인사업자', product: '운영자금', status: { text: '검토중', class: 'bg-blue-100 text-blue-800' } },
+                { name: '유재*', businessType: '개인사업자', product: '수출지원금', status: { text: '신청완료', class: 'bg-green-100 text-green-800' } },
+                { name: '문소*', businessType: '법인사업자', product: '고용지원금', status: { text: '상담중', class: 'bg-yellow-100 text-yellow-800' } }
+            ]
+        };
+
+        function getRandomItem(array) {
+            return array[Math.floor(Math.random() * array.length)];
+        }
+
+        function createRow(rowData) {
+            const row = document.createElement('tr');
+            row.className = 'hover:bg-gray-50';
+            row.innerHTML = `
+                <td class="px-6 py-4">${rowData.name}</td>
+                <td class="px-6 py-4">${rowData.businessType}</td>
+                <td class="px-6 py-4">${rowData.product}</td>
+                <td class="px-6 py-4">
+                    <span class="${rowData.status.class} px-2 py-1 rounded-full text-sm">${rowData.status.text}</span>
+                </td>
+            `;
+            return row;
+        }
+
+        function initializeInfiniteScroll() {
+            const tbody = document.getElementById('consultationTable');
+            
+            // 모든 데이터를 2번 복제해서 무한 스크롤 효과 만들기
+            const duplicatedData = [...consultationData.allData, ...consultationData.allData];
+            
+            // 모든 행 생성
+            duplicatedData.forEach(data => {
+                const row = createRow(data);
+                tbody.appendChild(row);
+            });
+            
+            // 애니메이션이 끝나면 위치를 리셋해서 무한 반복 효과
+            tbody.addEventListener('animationiteration', () => {
+                // 애니메이션이 한 번 완료될 때마다 위치를 리셋
+                tbody.style.transform = 'translateY(0)';
+            });
+        }
+
+        // 기존 테이블 데이터를 지우고 무한 스크롤 시작
+        function initializeRealTimeUpdates() {
+            const tbody = document.getElementById('consultationTable');
+            
+            // 기존 데이터를 천천히 페이드아웃
+            const existingRows = tbody.querySelectorAll('tr');
+            if (existingRows.length > 0) {
+                existingRows.forEach((row, index) => {
+                    setTimeout(() => {
+                        row.style.transition = 'opacity 0.5s ease-out';
+                        row.style.opacity = '0';
+                        
+                        setTimeout(() => {
+                            if (row.parentNode) {
+                                row.parentNode.removeChild(row);
+                            }
+                        }, 500);
+                    }, index * 50);
+                });
+                
+                // 모든 기존 데이터가 사라진 후 무한 스크롤 시작
+                setTimeout(() => {
+                    initializeInfiniteScroll();
+                }, existingRows.length * 50 + 1000);
+            } else {
+                // 기존 데이터가 없으면 바로 시작
+                initializeInfiniteScroll();
+            }
+        }
+
+        // Start infinite scroll after page load
+        setTimeout(() => {
+            initializeRealTimeUpdates();
+        }, 2000); // Wait 2 seconds before starting
+
+        // Privacy Policy Modal functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('privacyPolicyModal');
+            const privacyLink = document.getElementById('privacyModal');
+            const closeBtn = document.querySelector('.close');
+            const agreeBtn = document.getElementById('agreeBtn');
+            const disagreeBtn = document.getElementById('disagreeBtn');
+            const privacyCheck = document.getElementById('privacyCheck');
+
+            // 약관보기 클릭
+            privacyLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // 스크롤 방지
+            });
+
+            // X 버튼 클릭
+            closeBtn.addEventListener('click', function() {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // 스크롤 복원
+            });
+
+            // 동의하고 닫기 버튼
+            agreeBtn.addEventListener('click', function() {
+                privacyCheck.checked = true;
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+                
+                // 체크박스에 애니메이션 효과
+                privacyCheck.style.transform = 'scale(1.2)';
+                setTimeout(() => {
+                    privacyCheck.style.transform = 'scale(1)';
+                }, 200);
+            });
+
+            // 동의안함 버튼
+            disagreeBtn.addEventListener('click', function() {
+                privacyCheck.checked = false;
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            });
+
+            // 모달 외부 클릭시 닫기
+            window.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+
+            // ESC 키로 모달 닫기
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.style.display === 'block') {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+
+        // Telegram Bot Configuration
+        const TELEGRAM_BOT_TOKEN = '8001757520:AAFwMaKZ8xTuhzI8_whdxZzzFD7NaNN7G84';
+        const TELEGRAM_CHAT_ID = '455532741'; // ⚠️ 콘솔에서 확인한 올바른 Chat ID로 변경하세요!
+
+        // 텔레그램 봇 상태 테스트 함수
+        async function testTelegramBot() {
+            console.log('텔레그램 봇 상태 테스트 시작...');
+            const testUrl = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getMe`;
+            
+            try {
+                const response = await fetch(testUrl);
+                const data = await response.json();
+                console.log('봇 정보:', data);
+                
+                if (data.ok) {
+                    console.log('✅ 봇 토큰이 유효합니다:', data.result.username);
+                    
+                    // 업데이트 확인으로 올바른 Chat ID 찾기
+                    await checkChatUpdates();
+                    
+                } else {
+                    console.log('❌ 봇 토큰이 유효하지 않습니다:', data);
+                }
+            } catch (error) {
+                console.error('❌ 봇 테스트 중 오류:', error);
+            }
+        }
+
+        // 텔레그램 업데이트 확인 (올바른 Chat ID 찾기)
+        async function checkChatUpdates() {
+            console.log('텔레그램 업데이트 확인 중...');
+            const updatesUrl = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getUpdates`;
+            
+            try {
+                const response = await fetch(updatesUrl);
+                const data = await response.json();
+                
+                if (data.ok && data.result.length > 0) {
+                    console.log('� 최근 메시지들:', data.result);
+                    
+                    // 최근 메시지에서 Chat ID들 추출
+                    const chatIds = [...new Set(data.result.map(update => {
+                        if (update.message) return update.message.chat.id;
+                        if (update.callback_query) return update.callback_query.message.chat.id;
+                        return null;
+                    }).filter(id => id !== null))];
+                    
+                    console.log('🆔 발견된 Chat ID들:', chatIds);
+                    console.log('현재 설정된 Chat ID:', TELEGRAM_CHAT_ID);
+                    
+                    if (chatIds.length > 0) {
+                        console.log('💡 올바른 Chat ID를 사용하려면 다음 중 하나를 선택하세요:', chatIds);
+                    }
+                } else {
+                    console.log('📭 최근 메시지가 없습니다. 봇에게 메시지를 보내주세요.');
+                    console.log('💡 봇에게 /start 메시지를 보내고 다시 시도해보세요.');
+                }
+            } catch (error) {
+                console.error('❌ 업데이트 확인 중 오류:', error);
+            }
+        }
+
+        // 페이지 로드 시 텔레그램 봇 테스트 (개발자 도구에서 확인 가능)
+        setTimeout(() => {
+            console.log('텔레그램 봇 자동 테스트를 실행합니다...');
+            testTelegramBot(); // 자동 실행으로 변경
+        }, 3000);
+
+        // Send message to Telegram
+        async function sendToTelegram(message) {
+            const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+            
+            console.log('텔레그램 전송 시도:', {
+                bot_token: TELEGRAM_BOT_TOKEN.substring(0, 10) + '...',
+                chat_id: TELEGRAM_CHAT_ID,
+                message_length: message.length
+            });
+            
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        chat_id: TELEGRAM_CHAT_ID,
+                        text: message,
+                        parse_mode: 'HTML'
+                    })
+                });
+
+                const responseData = await response.text();
+                console.log('텔레그램 응답:', {
+                    status: response.status,
+                    ok: response.ok,
+                    data: responseData
+                });
+
+                if (response.ok) {
+                    console.log('텔레그램 전송 성공!');
+                    return true;
+                } else {
+                    console.error('텔레그램 API 오류:', {
+                        status: response.status,
+                        statusText: response.statusText,
+                        response: responseData
+                    });
+                    // 에러 상세 정보를 사용자에게 표시
+                    alert(`텔레그램 전송 실패 (${response.status}): ${responseData}`);
+                    return false;
+                }
+            } catch (error) {
+                console.error('텔레그램 전송 네트워크 오류:', error);
+                alert(`네트워크 오류: ${error.message}`);
+                return false;
+            }
+        }
+
+        // Main consultation button scroll to form
+        document.addEventListener('DOMContentLoaded', function() {
+            const mainConsultBtn = document.getElementById('mainConsultBtn');
+            const floatingBtn = document.querySelector('.fixed.bottom-6.right-6 button');
+            
+            // 메인 "무료 상담 신청하기" 버튼 클릭 이벤트
+            if (mainConsultBtn) {
+                mainConsultBtn.addEventListener('click', function() {
+                    document.getElementById('contact').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            }
+            
+            // 플로팅 버튼 클릭 이벤트
+            if (floatingBtn) {
+                floatingBtn.addEventListener('click', function() {
+                    document.getElementById('contact').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            }
+        });
+
+        // Form submission handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('consultationForm');
+            const submitBtn = document.getElementById('submitBtn');
+
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+
+                // 버튼 비활성화 및 로딩 상태
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '전송 중...';
+                submitBtn.classList.add('opacity-75');
+
+                // 폼 데이터 수집
+                const formData = new FormData(form);
+                const data = {
+                    businessName: formData.get('businessName'),
+                    representativeName: formData.get('representativeName'),
+                    phone: `${formData.get('phonePrefix')}-${formData.get('phoneMiddle')}-${formData.get('phoneLast')}`,
+                    businessLocation: formData.get('businessLocation'),
+                    businessYears: formData.get('businessYears'),
+                    annualRevenue: formData.get('annualRevenue'),
+                    requiredFunding: formData.get('requiredFunding')
+                };
+
+                console.log('폼 데이터 수집 완료:', data);
+
+                // 현재 시간
+                const now = new Date();
+                const timestamp = now.toLocaleString('ko-KR', {
+                    year: 'numeric',
+                    month: '2-digit',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit'
+                });
+
+                // 텔레그램 메시지 포맷
+                const message = `
+🏢 <b>바른경영지원센터 상담 신청</b>
+
+📅 <b>신청일시:</b> ${timestamp}
+
+👤 <b>신청자 정보</b>
+• 사업자명: ${data.businessName}
+• 대표자명: ${data.representativeName}
+• 연락처: ${data.phone}
+• 사업자 지역: ${data.businessLocation}
+
+📊 <b>사업 정보</b>
+• 업력: ${data.businessYears}
+• 연매출: ${data.annualRevenue}
+• 필요자금: ${data.requiredFunding}
+
+🔔 <b>즉시 상담 연락 요청</b>
+                `.trim();
+
+                console.log('생성된 메시지:', message);
+
+                // 텔레그램 전송
+                console.log('텔레그램 전송 시작...');
+                const success = await sendToTelegram(message);
+
+                if (success) {
+                    // 성공 메시지
+                    console.log('텔레그램 전송 성공 - 사용자에게 알림');
+                    alert('상담 신청이 완료되었습니다!\n담당자가 곧 연락드리겠습니다.');
+                    form.reset(); // 폼 초기화
+                } else {
+                    // 실패 메시지
+                    console.log('텔레그램 전송 실패 - 사용자에게 알림');
+                    alert('전송 중 오류가 발생했습니다.\n잠시 후 다시 시도해주세요.');
+                }
+
+                // 버튼 복원
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '문의하기';
+                submitBtn.classList.remove('opacity-75');
+            });
+        });
+    </script>
+</body>
+</html>
