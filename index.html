@@ -134,7 +134,7 @@
     <section class="gradient-bg text-white py-20">
         <div class="container mx-auto px-4 text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-6 slide-in">
-                사라지는 정책 자금과 정부지원금<br>
+                사라지는 정책 자금과<br> 정부지원금<br>
                 <span class="text-yellow-300">잡을 수 있습니다!</span>
             </h1>
             <div class="grid md:grid-cols-3 gap-8 my-12">
@@ -183,6 +183,101 @@
                     <div class="text-6xl font-bold text-gray-800 mb-2">834억+</div>
                     <div class="text-gray-600">원의 정부지원금 집행</div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Added Consultation Form Above Recommendations -->
+    <section class="gradient-bg py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-white">무료 상담 신청</h2>
+                <form class="bg-white rounded-lg p-8 shadow-lg" id="topConsultationForm">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-gray-700 text-sm font-bold mb-2">사업자명</label>
+                            <input type="text" id="topBusinessName" name="businessName" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 text-sm font-bold mb-2">성함</label>
+                            <input type="text" id="topRepresentativeName" name="representativeName" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">문의하기</label>
+                        <div class="flex">
+                            <select id="topPhonePrefix" name="phonePrefix" class="px-3 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:border-blue-500">
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="016">016</option>
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                                <option value="019">019</option>
+                            </select>
+                            <span class="px-3 py-2 bg-gray-100 border-t border-b border-gray-300">-</span>
+                            <input type="text" id="topPhoneMiddle" name="phoneMiddle" maxlength="4" class="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:border-blue-500" required>
+                            <span class="px-3 py-2 bg-gray-100 border-t border-b border-gray-300">-</span>
+                            <input type="text" id="topPhoneLast" name="phoneLast" maxlength="4" class="w-full px-3 py-2 border border-gray-300 rounded-r-lg focus:outline-none focus:border-blue-500" required>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">사업자 지역 (사업자 등록증 주소지 기준)</label>
+                        <select id="topBusinessLocation" name="businessLocation" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required>
+                            <option value="">시/도/군</option>
+                            <option value="서울특별시">서울특별시</option>
+                            <option value="부산광역시">부산광역시</option>
+                            <option value="대구광역시">대구광역시</option>
+                            <option value="인천광역시">인천광역시</option>
+                            <option value="광주광역시">광주광역시</option>
+                            <option value="대전광역시">대전광역시</option>
+                            <option value="울산광역시">울산광역시</option>
+                            <option value="세종특별자치시">세종특별자치시</option>
+                            <option value="경기도">경기도</option>
+                            <option value="강원도">강원도</option>
+                            <option value="충청북도">충청북도</option>
+                            <option value="충청남도">충청남도</option>
+                            <option value="전라북도">전라북도</option>
+                            <option value="전라남도">전라남도</option>
+                            <option value="경상북도">경상북도</option>
+                            <option value="경상남도">경상남도</option>
+                            <option value="제주특별자치도">제주특별자치도</option>
+                        </select>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">업력</label>
+                        <select id="topBusinessYears" name="businessYears" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required>
+                            <option value="">업력 선택</option>
+                            <option value="1년 미만">1년 미만</option>
+                            <option value="1년~3년">1년~3년</option>
+                            <option value="3년~5년">3년~5년</option>
+                            <option value="5년~10년">5년~10년</option>
+                            <option value="10년 이상">10년 이상</option>
+                        </select>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">연매출</label>
+                        <select id="topAnnualRevenue" name="annualRevenue" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required>
+                            <option value="">연매출 선택</option>
+                            <option value="1억 이하">1억 이하</option>
+                            <option value="1억~5억">1억~5억</option>
+                            <option value="5억~10억">5억~10억</option>
+                            <option value="10억 이상">10억 이상</option>
+                        </select>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">필요자금</label>
+                        <input type="text" id="topRequiredFunding" name="requiredFunding" placeholder="필요자금" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required>
+                    </div>
+                    <div class="mb-6">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2" id="topPrivacyCheck" required>
+                            <span class="text-sm text-gray-700">개인정보처리방침 동의 <a href="#" class="text-blue-600 underline" id="topPrivacyModal">[약관보기]</a></span>
+                        </label>
+                    </div>
+                    <button type="submit" id="topSubmitBtn" class="w-full bg-blue-600 text-white py-3 rounded-lg text-lg font-bold hover:bg-blue-700 transition-colors transform hover:scale-105">
+                        문의하기
+                    </button>
+                </form>
             </div>
         </div>
     </section>
@@ -720,13 +815,22 @@
         document.addEventListener('DOMContentLoaded', function() {
             const modal = document.getElementById('privacyPolicyModal');
             const privacyLink = document.getElementById('privacyModal');
+            const topPrivacyLink = document.getElementById('topPrivacyModal');
             const closeBtn = document.querySelector('.close');
             const agreeBtn = document.getElementById('agreeBtn');
             const disagreeBtn = document.getElementById('disagreeBtn');
             const privacyCheck = document.getElementById('privacyCheck');
+            const topPrivacyCheck = document.getElementById('topPrivacyCheck');
 
-            // 약관보기 클릭
+            // 약관보기 클릭 - 하단 폼
             privacyLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // 스크롤 방지
+            });
+            
+            // 약관보기 클릭 - 상단 폼
+            topPrivacyLink.addEventListener('click', function(e) {
                 e.preventDefault();
                 modal.style.display = 'block';
                 document.body.style.overflow = 'hidden'; // 스크롤 방지
@@ -740,20 +844,25 @@
 
             // 동의하고 닫기 버튼
             agreeBtn.addEventListener('click', function() {
+                // 어느 폼에서 열었는지에 따라 해당 체크박스 체크
                 privacyCheck.checked = true;
+                topPrivacyCheck.checked = true;
                 modal.style.display = 'none';
                 document.body.style.overflow = 'auto';
                 
                 // 체크박스에 애니메이션 효과
                 privacyCheck.style.transform = 'scale(1.2)';
+                topPrivacyCheck.style.transform = 'scale(1.2)';
                 setTimeout(() => {
                     privacyCheck.style.transform = 'scale(1)';
+                    topPrivacyCheck.style.transform = 'scale(1)';
                 }, 200);
             });
 
             // 동의안함 버튼
             disagreeBtn.addEventListener('click', function() {
                 privacyCheck.checked = false;
+                topPrivacyCheck.checked = false;
                 modal.style.display = 'none';
                 document.body.style.overflow = 'auto';
             });
@@ -898,10 +1007,12 @@
             const mainConsultBtn = document.getElementById('mainConsultBtn');
             const floatingBtn = document.querySelector('.fixed.bottom-6.right-6 button');
             
-            // 메인 "무료 상담 신청하기" 버튼 클릭 이벤트
+            // 메인 "무료 상담 신청하기" 버튼 클릭 이벤트 - 가까운 상단 폼으로 스크롤
             if (mainConsultBtn) {
                 mainConsultBtn.addEventListener('click', function() {
-                    document.getElementById('contact').scrollIntoView({
+                    // 현재 메인 버튼은 상단 폼으로 스크롤하도록 변경
+                    const topFormSection = document.querySelector('section.gradient-bg');
+                    topFormSection.scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'
                     });
@@ -919,11 +1030,16 @@
             }
         });
 
-        // Form submission handler
+        // Form submission handler - 하단 폼
         document.addEventListener('DOMContentLoaded', function() {
             const form = document.getElementById('consultationForm');
             const submitBtn = document.getElementById('submitBtn');
+            
+            // 상단 폼 요소들
+            const topForm = document.getElementById('topConsultationForm');
+            const topSubmitBtn = document.getElementById('topSubmitBtn');
 
+            // 하단 폼 제출 처리
             form.addEventListener('submit', async function(e) {
                 e.preventDefault();
 
@@ -941,7 +1057,8 @@
                     businessLocation: formData.get('businessLocation'),
                     businessYears: formData.get('businessYears'),
                     annualRevenue: formData.get('annualRevenue'),
-                    requiredFunding: formData.get('requiredFunding')
+                    requiredFunding: formData.get('requiredFunding'),
+                    formType: '하단 폼'
                 };
 
                 console.log('폼 데이터 수집 완료:', data);
@@ -975,6 +1092,7 @@
 • 필요자금: ${data.requiredFunding}
 
 🔔 <b>즉시 상담 연락 요청</b>
+• 접수 위치: ${data.formType}
                 `.trim();
 
                 console.log('생성된 메시지:', message);
@@ -998,6 +1116,85 @@
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = '문의하기';
                 submitBtn.classList.remove('opacity-75');
+            });
+            
+            // 상단 폼 제출 처리
+            topForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+
+                // 버튼 비활성화 및 로딩 상태
+                topSubmitBtn.disabled = true;
+                topSubmitBtn.innerHTML = '전송 중...';
+                topSubmitBtn.classList.add('opacity-75');
+
+                // 폼 데이터 수집
+                const formData = new FormData(topForm);
+                const data = {
+                    businessName: formData.get('businessName'),
+                    representativeName: formData.get('representativeName'),
+                    phone: `${formData.get('phonePrefix')}-${formData.get('phoneMiddle')}-${formData.get('phoneLast')}`,
+                    businessLocation: formData.get('businessLocation'),
+                    businessYears: formData.get('businessYears'),
+                    annualRevenue: formData.get('annualRevenue'),
+                    requiredFunding: formData.get('requiredFunding'),
+                    formType: '상단 폼'
+                };
+
+                console.log('상단 폼 데이터 수집 완료:', data);
+
+                // 현재 시간
+                const now = new Date();
+                const timestamp = now.toLocaleString('ko-KR', {
+                    year: 'numeric',
+                    month: '2-digit',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit'
+                });
+
+                // 텔레그램 메시지 포맷
+                const message = `
+🏢 <b>바른경영지원센터 상담 신청</b>
+
+📅 <b>신청일시:</b> ${timestamp}
+
+👤 <b>신청자 정보</b>
+• 사업자명: ${data.businessName}
+• 대표자명: ${data.representativeName}
+• 연락처: ${data.phone}
+• 사업자 지역: ${data.businessLocation}
+
+📊 <b>사업 정보</b>
+• 업력: ${data.businessYears}
+• 연매출: ${data.annualRevenue}
+• 필요자금: ${data.requiredFunding}
+
+🔔 <b>즉시 상담 연락 요청</b>
+• 접수 위치: ${data.formType}
+                `.trim();
+
+                console.log('생성된 메시지:', message);
+
+                // 텔레그램 전송
+                console.log('텔레그램 전송 시작...');
+                const success = await sendToTelegram(message);
+
+                if (success) {
+                    // 성공 메시지
+                    console.log('텔레그램 전송 성공 - 사용자에게 알림');
+                    alert('상담 신청이 완료되었습니다!\n담당자가 곧 연락드리겠습니다.');
+                    topForm.reset(); // 폼 초기화
+                } else {
+                    // 실패 메시지
+                    console.log('텔레그램 전송 실패 - 사용자에게 알림');
+                    alert('전송 중 오류가 발생했습니다.\n잠시 후 다시 시도해주세요.');
+                }
+
+                // 버튼 복원
+                topSubmitBtn.disabled = false;
+                topSubmitBtn.innerHTML = '문의하기';
+                topSubmitBtn.classList.remove('opacity-75');
             });
         });
     </script>
